@@ -1,18 +1,12 @@
-import React from "react"
+import React from "react";
+import { PillProps } from "@/interfaces";
 
-interface PillProps {
-  text: string
-  color?: string // allows custom background colors
-}
-
-const Pill: React.FC<PillProps> = ({ text, color = "bg-blue-500" }) => {
+const Pill: React.FC<PillProps> = ({ title }) => {
   return (
-    <span
-      className={`inline-block px-3 py-1 text-sm text-white rounded-full ${color}`}
-    >
-      {text}
+    <span className="px-3 py-1 bg-blue-500 text-white rounded-full">
+      {title}
     </span>
-  )
-}
+  );
+};
 
-export default Pill
+export default Pill;
