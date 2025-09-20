@@ -27,7 +27,7 @@ const Landing: React.FC = () => {
       <div className="flex space-x-4">
         <Button title="Small Button" styles="rounded-sm" />
         <Button title="Medium Button" styles="rounded-md" />
-        <Button title="Large Button" styles="rounded-full" />
+        <Button title="Large Button" styles="rounded-lg" />
       </div>
     </div>
   );
